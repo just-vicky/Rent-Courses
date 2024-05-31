@@ -12,7 +12,9 @@ import NotFound from "./pages/NotFound";
 import Courses, {loader as coursesLoader} from "./pages/Courses/Courses";
 import CourseDetails, {loader as courseDetailLoader} from "./pages/Courses/CourseDetail";
 import UserLayout from "./Components/UserLayout";
-
+import Dashboard from "./pages/User/Dashboard";
+import Income from "./pages/User/Income";
+import Reviews from "./pages/User/Reviews";
 
 
 import "./index.css";
@@ -28,9 +30,9 @@ const router = createBrowserRouter(
       <Route path="courses/:id" element={<CourseDetails />} loader={courseDetailLoader} />
 
       <Route path="host" element={<UserLayout />}>
-        {/* <Route index element={<Dashboard />} />
+        <Route index element={<Dashboard />} />
         <Route path="income" element={<Income />} />
-        <Route path="reviews" element={<Reviews />} /> */}
+        <Route path="reviews" element={<Reviews />} />
         {/* <Route path="courses" element={<UserCourses />} /> */}
         {/* <Route path="courses/:id" element={<UserCourseDetail />}>
           <Route index element={<UserCourseInfo />} />
