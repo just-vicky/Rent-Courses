@@ -15,6 +15,7 @@ import UserLayout from "./Components/UserLayout";
 import Dashboard from "./pages/User/Dashboard";
 import Income from "./pages/User/Income";
 import Reviews from "./pages/User/Reviews";
+import UserCourses, {loader as userCoursesLoader} from "./pages/User/UserCourses";
 
 
 import "./index.css";
@@ -33,7 +34,7 @@ const router = createBrowserRouter(
         <Route index element={<Dashboard />} />
         <Route path="income" element={<Income />} />
         <Route path="reviews" element={<Reviews />} />
-        {/* <Route path="courses" element={<UserCourses />} /> */}
+        <Route path="courses" element={<UserCourses />} loader={userCoursesLoader}/>
         {/* <Route path="courses/:id" element={<UserCourseDetail />}>
           <Route index element={<UserCourseInfo />} />
           <Route path="pricing" element={<UserCoursePricing />} />

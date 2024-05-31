@@ -6,14 +6,14 @@ export default function Income() {
       <h1 className="text-3xl font-bold mb-6">Income</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        {/* Income Summary Card */}
+        
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Income Summary</h2>
           <p className="text-2xl font-bold text-green-500">$12,345</p>
           <p className="text-gray-700">Total income for this month</p>
         </div>
 
-        {/* Income Sources Card */}
+        
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Income Sources</h2>
           <ul className="list-disc pl-5">
@@ -30,7 +30,7 @@ export default function Income() {
         </div>
       </div>
 
-      {/* Recent Transactions */}
+{/*       
       <div className="bg-white p-6 rounded-lg shadow-md mb-6">
         <h2 className="text-xl font-semibold mb-4">Recent Transactions</h2>
         <ul>
@@ -58,11 +58,11 @@ export default function Income() {
         </ul>
       </div>
 
-      {/* Additional Information */}
+      
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold mb-4">Additional Information</h2>
         <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula cursus metus, et scelerisque eros.</p>
-      </div>
+      </div> */}
     </div>
     )
 }

@@ -22,7 +22,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <div className="bg-white p-4 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Sales Overview</h2>
           <div className="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
@@ -47,7 +47,7 @@ export default function Dashboard() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-white p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold mb-4">Additional Information</h2>

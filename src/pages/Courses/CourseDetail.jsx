@@ -24,7 +24,7 @@ export default function CourseDetail() {
     </Link>
 
     <div className="mt-6 p-6 bg-white rounded-lg shadow-md">
-        <img src={course.imageUrl} alt={course.name} className="w-full h-64 object-cover rounded-md mb-4" />
+        <center><img src={course.imageUrl} alt={course.name} className="w-1/2 h-64 object-cover rounded-md mb-4" /></center>
         <i className={`course-type ${course.type} selected text-gray-500 mb-2`}>
             {course.type}
         </i>

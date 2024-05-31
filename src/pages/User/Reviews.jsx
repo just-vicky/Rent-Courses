@@ -6,7 +6,7 @@ export default function Reviews() {
         <h1 className="text-3xl font-bold mb-6">Reviews</h1>
   
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-          {/* Review Summary */}
+          
           <div className="bg-white p-6 rounded-lg shadow-md col-span-1 lg:col-span-3">
             <h2 className="text-xl font-semibold mb-4">Overall Rating</h2>
             <div className="flex items-center">
@@ -16,8 +16,8 @@ export default function Reviews() {
             <p className="text-gray-600 mt-2">Based on 120 reviews</p>
           </div>
   
-          {/* Recent Reviews */}
-          <div className="bg-white p-6 rounded-lg shadow-md lg:col-span-2">
+          
+          {/* <div className="bg-white p-6 rounded-lg shadow-md lg:col-span-2">
             <h2 className="text-xl font-semibold mb-4">Recent Reviews</h2>
             <ul>
               <li className="mb-4">
@@ -45,10 +45,10 @@ export default function Reviews() {
                 <p className="text-sm text-gray-500">2 weeks ago</p>
               </li>
             </ul>
-          </div>
+          </div> */}
   
-          {/* Review Form */}
-          <div className="bg-white p-6 rounded-lg shadow-md lg:col-span-1">
+          
+          {/* <div className="bg-white p-6 rounded-lg shadow-md lg:col-span-1">
             <h2 className="text-xl font-semibold mb-4">Leave a Review</h2>
             <form>
               <div className="mb-4">
@@ -90,7 +90,7 @@ export default function Reviews() {
                 Submit Review
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     )
