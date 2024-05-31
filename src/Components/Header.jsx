@@ -25,7 +25,7 @@ export default function Header() {
             isActive ? activeStyles : "text-white hover:text-gray-400"
           }
         >
-          Vans
+          Courses
         </NavLink>
         <Link to="login" className="login-link flex items-center">
           <img
