@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import {
   Link,
   useLoaderData,
@@ -16,6 +16,7 @@ export default function Courses() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const dataPromise = useLoaderData();
+  console.log(dataPromise);
 
   const typeFilter = searchParams.get("type");
 
@@ -34,8 +35,6 @@ export default function Courses() {
     const displayedCourses = typeFilter
       ? courses.filter((course) => course.category === typeFilter)
       : courses;
-
-    console.log(displayedCourses);
 
     const courseElements = displayedCourses.map((course) => (
       <article key={course.id} className="border p-4 rounded-md">
@@ -102,9 +101,9 @@ export default function Courses() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Explore our courses</h1>
-      <React.Suspense fallback={<h2>Loading Courses...</h2>}>
+      <Suspense fallback={<h2>Loading Courses...</h2>}>
         <Await resolve={dataPromise.courses}>{renderCourseElements}</Await>
-      </React.Suspense>
+      </Suspense>
     </div>
   );
 }

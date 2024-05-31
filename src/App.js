@@ -10,7 +10,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Courses, {loader as coursesLoader} from "./pages/Courses/Courses";
-// import CourseDetails, {loader as courseDetailLoader} from "./pages/Courses/CourseDetail";
+import CourseDetails, {loader as courseDetailLoader} from "./pages/Courses/CourseDetail";
 
 
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="login" element={<Login />} />
       <Route path="courses" element={<Courses />} loader={coursesLoader} />
-      {/* <Route path="courses/:id" element={<CourseDetails />} loader={courseDetailLoader} /> */}
+      <Route path="courses/:id" element={<CourseDetails />} loader={courseDetailLoader} />
 
       {/* <Route path="host" element={<HostLayout />}>
         <Route index element={<Dashboard />} />
