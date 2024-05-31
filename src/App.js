@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Courses, {loader as coursesLoader} from "./pages/Courses/Courses";
 import CourseDetails, {loader as courseDetailLoader} from "./pages/Courses/CourseDetail";
+import UserLayout from "./Components/UserLayout";
 
 
 
@@ -26,17 +27,17 @@ const router = createBrowserRouter(
       <Route path="courses" element={<Courses />} loader={coursesLoader} />
       <Route path="courses/:id" element={<CourseDetails />} loader={courseDetailLoader} />
 
-      {/* <Route path="host" element={<HostLayout />}>
-        <Route index element={<Dashboard />} />
+      <Route path="host" element={<UserLayout />}>
+        {/* <Route index element={<Dashboard />} />
         <Route path="income" element={<Income />} />
-        <Route path="reviews" element={<Reviews />} />
-        <Route path="courses" element={<HostCourses />} />
-        <Route path="courses/:id" element={<HostCourseDetail />}>
-          <Route index element={<HostVanInfo />} />
-          <Route path="pricing" element={<HostCoursePricing />} />
-          <Route path="photos" element={<HostCoursePhotos />} />
-        </Route>
-      </Route>  */}
+        <Route path="reviews" element={<Reviews />} /> */}
+        {/* <Route path="courses" element={<UserCourses />} /> */}
+        {/* <Route path="courses/:id" element={<UserCourseDetail />}>
+          <Route index element={<UserCourseInfo />} />
+          <Route path="pricing" element={<UserCoursePricing />} />
+          <Route path="photos" element={<UserCoursePhotos />} />
+        </Route> */}
+      </Route> 
       <Route path="*" element={<NotFound />} />
     </Route>
   )
