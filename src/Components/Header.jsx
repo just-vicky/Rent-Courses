@@ -12,7 +12,7 @@ export default function Header() {
       </Link>
       <nav className="flex space-x-4">
         <NavLink
-          to="host"
+          to="user"
           className={({ isActive }) =>
             isActive ? activeStyles : "text-white hover:text-gray-400"
           }

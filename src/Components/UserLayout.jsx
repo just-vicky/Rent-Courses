@@ -7,7 +7,7 @@ const activeStyles = "text-blue-500 font-bold border-b-2 border-blue-500";
 
   return (
     <>
-            <nav className="flex justify-around p-4 bg-gray-800 text-white">
+            <nav className="flex justify-around p-4 bg-gray-700 text-white">
                 <NavLink
                     to="."
                     end

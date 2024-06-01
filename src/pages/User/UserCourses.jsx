@@ -3,7 +3,7 @@ import { Link, useLoaderData, defer, Await } from "react-router-dom";
 import { getUserCourses } from "../../api";
 
 export async function loader() {
-  return defer({ courses: getUserCourses() });
+  return defer({ courses: getUserCourses()});
 }
 
 export default function UserCourses() {
@@ -11,7 +11,7 @@ export default function UserCourses() {
 
   function renderCourseElements(courses) {
     const userCoursesEls = courses.map((course) => (
-      <Link to={`/courses/${course.id}`} key={course.id} className="block">
+      <Link to={course.id} key={course.id} className="block">
         <div className="flex items-center my-4 bg-gray-100 rounded-lg shadow-md p-4 hover:bg-gray-300 transition duration-200">
           <img
             src={course.imageUrl}
@@ -27,19 +27,19 @@ export default function UserCourses() {
     ));
     return (
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-6">Available Courses</h1>
         <div className="space-y-6">
           <section>{userCoursesEls}</section>
         </div>
       </div>
     );
   }
-
+  
   return (
     <section>
       <h1 className="text-3xl font-bold mb-6 mt-4 text-center">
         Your Listed Courses
       </h1>
+      <h1 className="text-2xl font-bold mb-6">Available Courses</h1>
       <React.Suspense
         fallback={
           <div class="relative flex w-64 animate-pulse gap-2 p-4">
