@@ -101,7 +101,15 @@ export default function Courses() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Explore our courses</h1>
-      <Suspense fallback={<h2>Loading Courses...</h2>}>
+      <Suspense
+        fallback={
+          <div class="w-full gap-x-2 flex justify-center items-center">
+            <div class="w-5 bg-gray-200 animate-pulse h-5 rounded-full animate-bounce"></div>
+            <div class="w-5 animate-pulse h-5 bg-gray-400 rounded-full animate-bounce"></div>
+            <div class="w-5 h-5 animate-pulse bg-gray-600 rounded-full animate-bounce"></div>
+          </div>
+        }
+      >
         <Await resolve={dataPromise.courses}>{renderCourseElements}</Await>
       </Suspense>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import icon from "../assets/icons8-login-50.png"
+import icon from "../assets/icons8-login-50.png";
 
 export default function Header() {
   const activeStyles = "text-blue-500 font-bold";
@@ -11,6 +11,14 @@ export default function Header() {
         #Courses
       </Link>
       <nav className="flex space-x-4">
+        <NavLink
+          to="user"
+          className={({ isActive }) =>
+            isActive ? activeStyles : "text-white hover:text-gray-400"
+          }
+        >
+          User
+        </NavLink>
         <NavLink
           to="about"
           className={({ isActive }) =>
