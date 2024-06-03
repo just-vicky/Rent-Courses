@@ -4,6 +4,6 @@ import { useOutletContext } from "react-router-dom"
 export default function UserCoursePhotos(){
   const { currentCourse } = useOutletContext()
     return (
-        <img src={currentCourse.imageUrl}/>
+        <img alt='' src={currentCourse.imageUrl}/>
     )
 }

@@ -7,11 +7,7 @@ export async function loader({ params }) {
 }
 export default function UserCourseDetail() {
   const currentCourse = useLoaderData();
-  const activeStyles = {
-    fontWeight: "bold",
-    textDecoration: "underline",
-    color: "#161616",
-  };
+
 
   return (
     <section className="p-6 bg-cream-100">
@@ -28,6 +24,7 @@ export default function UserCourseDetail() {
           <img
             src={currentCourse.imageUrl}
             className="w-1/2 h-96 object-cover rounded-md"
+            alt=""
           />
           <div className="flex flex-col  p-4 text-center">
             <div
