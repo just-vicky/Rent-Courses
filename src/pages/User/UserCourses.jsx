@@ -15,7 +15,7 @@ export default function UserCourses() {
         <div className="flex items-center my-4 bg-gray-100 rounded-lg shadow-md p-4 hover:bg-gray-300 transition duration-200">
           <img
             src={course.imageUrl}
-            alt={`Photo of ${course.name}`}
+            alt={`${course.name}`}
             className="w-32 h-32 object-cover rounded-lg mr-4"
           />
           <div>
