@@ -16,8 +16,6 @@ export default function Courses() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const dataPromise = useLoaderData();
-  console.log(dataPromise);
-
   const typeFilter = searchParams.get("type");
 
   function handleFilterChange(key, value) {
