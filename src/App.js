@@ -24,6 +24,7 @@ import UserCourseDetail, {
   loader as userCourseDetailLoader,
 } from "./pages/User/UserCourseDetail";
 import UserCourseInfo from "./pages/User/UserCourseInfo";
+import UserCoursePhotos from "./pages/User/UserCoursePhotos";
 
 import "./index.css";
 
@@ -62,8 +63,8 @@ const router = createBrowserRouter(
         />
         <Route path="courses/:id" element={<UserCourseDetail />} loader={userCourseDetailLoader}>
           <Route index element={<UserCourseInfo />} />
-          {/* <Route path="pricing" element={<UserCoursePricing />} />
-          <Route path="photos" element={<UserCoursePhotos />} /> */}
+          {/* <Route path="pricing" element={<UserCoursePricing />} /> */}
+          <Route path="photos" element={<UserCoursePhotos />} />
         </Route>
       </Route>
       <Route path="*" element={<NotFound />} />
