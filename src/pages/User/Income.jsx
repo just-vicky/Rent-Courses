@@ -9,7 +9,7 @@ export default function Income() {
         
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Income Summary</h2>
-          <p className="text-2xl font-bold text-green-500">$12,345</p>
+          <p className="text-2xl font-bold text-green-500">Rs. 12,345</p>
           <p className="text-gray-700">Total income for this month</p>
         </div>
 
@@ -18,13 +18,13 @@ export default function Income() {
           <h2 className="text-xl font-semibold mb-4">Income Sources</h2>
           <ul className="list-disc pl-5">
             <li className="mb-2">
-              <span className="font-bold text-gray-700">Product Sales:</span> $8,000
+              <span className="font-bold text-gray-700">Product Sales:</span> Rs. 8,000
             </li>
             <li className="mb-2">
-              <span className="font-bold text-gray-700">Consulting Services:</span> $3,000
+              <span className="font-bold text-gray-700">Consulting Services:</span> Rs. 3,000
             </li>
             <li>
-              <span className="font-bold text-gray-700">Affiliate Marketing:</span> $1,345
+              <span className="font-bold text-gray-700">Affiliate Marketing:</span> Rs. 1,345
             </li>
           </ul>
         </div>

@@ -14,7 +14,7 @@ export default function CourseDetail() {
   const type = location.state?.type || "all";
 
   return (
-    <div className="p-6">
+    <div className="p-6 pb-48">
     <Link
         to={`..${search}`}
         relative="path"

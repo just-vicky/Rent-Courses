@@ -40,7 +40,7 @@ export default function UserCourseDetail() {
 
             <h3 className="text-5xl  font-bold mt-2">{currentCourse.name}</h3>
             <h4 className="text-3xl text-gray-500 mt-1">
-              ${currentCourse.price}/day
+              Rs. {currentCourse.price}/day
             </h4>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function UserCourseDetail() {
           </NavLink>
         </nav>
         <div className="p-4">
-          <Outlet />
+          <Outlet context={{currentCourse}}/>
         </div>
       </div>
     </section>
