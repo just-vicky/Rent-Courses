@@ -23,6 +23,7 @@ import UserCourses, {
 import UserCourseDetail, {
   loader as userCourseDetailLoader,
 } from "./pages/User/UserCourseDetail";
+import UserCourseInfo from "./pages/User/UserCourseInfo";
 
 import "./index.css";
 
@@ -60,8 +61,8 @@ const router = createBrowserRouter(
           }
         />
         <Route path="courses/:id" element={<UserCourseDetail />} loader={userCourseDetailLoader}>
-          {/* <Route index element={<UserCourseInfo />} />
-          <Route path="pricing" element={<UserCoursePricing />} />
+          <Route index element={<UserCourseInfo />} />
+          {/* <Route path="pricing" element={<UserCoursePricing />} />
           <Route path="photos" element={<UserCoursePhotos />} /> */}
         </Route>
       </Route>

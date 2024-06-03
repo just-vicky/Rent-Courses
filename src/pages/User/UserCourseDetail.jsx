@@ -79,7 +79,7 @@ export default function UserCourseDetail() {
           </NavLink>
         </nav>
         <div className="p-4">
-          <Outlet />
+          <Outlet context={{currentCourse}}/>
         </div>
       </div>
     </section>
