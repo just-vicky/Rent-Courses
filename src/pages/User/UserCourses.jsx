@@ -20,7 +20,7 @@ export default function UserCourses() {
           />
           <div>
             <h3 className="text-lg font-semibold">{course.name}</h3>
-            <p className="text-gray-600">${course.price}/day</p>
+            <p className="text-gray-600">Rs. {course.price}/day</p>
           </div>
         </div>
       </Link>
